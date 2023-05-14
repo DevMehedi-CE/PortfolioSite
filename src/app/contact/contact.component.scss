@@ -1,0 +1,55 @@
+:host {
+  display: block;
+  color: #fff;
+  padding: 48px 32px;
+}
+
+h1 {
+  margin-top: 30px;
+  padding: 16px 0;
+  text-align: center;
+  letter-spacing: 1px;
+  color: var(--green);
+  outline: 1px solid white;
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+.links {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.links ul {
+  display: flex;
+  gap: 10px;
+}
+
+.links img {
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.contact-info {
+  margin-top: 10px;
+}
+
+// =====PC MODE=====
+
+:host.pc .contact-dit {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+:host.pc .contact-info {
+  margin-top: 50px;
+}
+
+:host.pc .contact-info {
+  font-size: 16px;
+}
+
+:host.pc .contact-info span {
+  color: var(--green);
+}

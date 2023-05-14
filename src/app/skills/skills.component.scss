@@ -1,0 +1,60 @@
+h1 {
+  padding: 1rem 0;
+  text-align: center;
+  letter-spacing: 1px;
+  color: var(--green);
+  outline: 1px solid white;
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+:host {
+  display: block;
+  color: #fff;
+  padding: 48px 32px;
+}
+
+section {
+  margin-top: 32px;
+  text-align: center;
+}
+
+section h2 {
+  color: var(--green);
+}
+
+section h4 {
+  color: var(--gray-light);
+}
+
+section .rating {
+  width: 100%;
+  height: max-content;
+  margin-top: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+section .rating .bar {
+  height: 5px;
+  flex-grow: 1;
+  margin-right: 16px;
+  background-color: gray;
+}
+
+section .rating .bar div {
+  height: 100%;
+  background-color: var(--green);
+}
+
+// ======PC MODE=====
+
+:host.pc .container {
+  display: grid;
+  gap: 32px 64px;
+  grid-template-columns: 1fr 1fr;
+}
+
+:host.pc h1 {
+  grid-column: 1/3;
+}
